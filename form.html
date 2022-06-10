@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Invoice Details</title>
+		<link rel="stylesheet" href="css/form.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="login">
+				<h1 class="login-heading"><strong>Invoice Details</strong></h1>
+				<form id="inovoice_form">
+					<h3>Product Information</h3>
+					<div class="label_input_box">
+						<label>Name</label>
+						<input type="text" placeholder="Product Name" id="product_name" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+					
+					<div class="label_input_box">
+						<label>Price</label>
+						<input type="number" step="any" placeholder="Price" id="product_price" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+					
+					<div class="label_input_box">
+						<label>Weight</label>
+						<input type="number" step="any" placeholder="Weight" id="product_weight" class="input-txt" required="required" /> 
+						<span class="unit_weight">k.g</span><span class="star">*</span>
+					</div>
+
+					<div class="label_input_box">
+						<label>Pieces</label>
+						<input type="number" step="any" placeholder="Pieces" id="product_pieces" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+
+					<div class="label_input_box">
+						<label>Total Account</label>
+						<input type="number" step="any" placeholder="Total Accountccount" id="total_account" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+					
+					<div class="label_input_box">
+						<label>Order ID</label>
+						<input type="text" placeholder="Order ID" id="order_id" class="input-txt" />
+					</div>
+
+					<h3>Customer Information</h3>
+
+					<div class="label_input_box">
+						<label>Name</label>
+						<input type="text" placeholder="Customer Name" id="customer_name" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+
+					<div class="label_input_box">
+						<label>Address</label>
+						<input type="text" placeholder="Customer Address" id="customer_address" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+					
+					<div class="label_input_box">
+						<label>Phone</label>
+						<input type="text" placeholder="Customer Phone" id="customer_phone" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+	
+					<div class="label_input_box">
+						<label>Origin</label>
+						<input type="text" placeholder="Customer Origin" id="customer_origin" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+					
+					<div class="label_input_box">
+						<label>Destination</label>
+						<input type="text" placeholder="Customer Destination" id="customer_destination" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+
+					<h3>Other Information</h3>
+					
+					<div class="label_input_box">
+						<label>Customers Services</label>
+						<input type="text" placeholder="01204722228" id="customers_services" class="input-txt" />
+					</div>
+					
+					<div class="label_input_box">
+						<label>Date</label>
+						<input type="date" id="date" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+					
+					<div class="label_input_box">
+						<label>Barcode</label>
+						<input type="text" placeholder="Barcode" id="barcode" class="input-txt" required="required" />
+						<span class="star">*</span>
+					</div>
+					
+					<div class="label_input_box">
+						<label>Foreign Ref</label>
+						<input type="text" placeholder="Foreign Ref" id="foreign_ref" class="input-txt" />
+					</div>
+					
+					<div class="label_input_box">
+						<label>Ref 1</label>
+						<input type="text" placeholder="Ref 1" id="ref_1" class="input-txt" />
+					</div>
+
+					<div class="label_input_box">
+						<label>Chargeable</label>
+						<input type="text" placeholder="Chargeable"  id="chargeable" class="input-txt" />
+					</div>
+					
+					<div class="label_input_box">
+						<label>Shipper Ref</label>
+						<input type="text" placeholder="Shipper Ref" id="shipper_ref" class="input-txt" />
+					</div>
+
+					<div class="label_input_box">
+						<label>Consignee Ref</label>
+						<input type="text" placeholder="Consignee Ref" id="consignee_ref" class="input-txt" />
+					</div>
+
+					<div class="login-footer">
+						<button class="btn btn--right" id="submit_form">Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="js/dom-to-image.min.js"></script>
+		<script src="js/form.js"></script>
+	</body>
+</html>

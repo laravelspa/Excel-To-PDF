@@ -1,0 +1,288 @@
+html {
+	background-color:  #5D92BA;
+	margin:0;
+	padding: 0;
+}
+body{
+   	background-color:  #5D92BA;
+   	box-sizing: border-box;
+   	letter-spacing: 0px;
+ }
+
+.up {
+	text-transform: uppercase;
+}
+.fb {
+font-weight: bold;
+}
+.fb-20 {
+	font-size: 20px;
+	font-weight: bold;
+}
+ button.invoice_print {
+ 	width: 10rem;
+ 	position: fixed;
+    bottom: 3%;
+    right: 3%;
+    margin-left: 22px; 
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #39357b;
+    border: 1px solid #39357b;
+    border-radius: 5px;
+ 	cursor: pointer;
+ }
+
+ button.invoice_pdf {
+ 	width: 10rem;
+ 	position: fixed;
+    bottom: 15%;
+    right: 3%;
+    margin-left: 22px; 
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #39357b;
+    border: 1px solid #39357b;
+    border-radius: 5px;
+ 	cursor: pointer;
+ }
+.container {
+	background-color: #ffffff;
+	color:#000000;
+	/* margin: 10px auto; */
+	padding:10px;
+	width: 760px;
+}
+.section_one {
+	display: flex;
+	height: 100px;
+}
+.section_two, .section_three{
+	display: flex;
+	height: 120px;	
+}
+.section_four {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	border: 2px solid #000;
+}
+
+.section_five, .section_sex {
+	display: flex;
+	height: 185px;
+	border: 2px solid #000;
+	flex-direction: column;
+}
+
+.invoice_footer {
+	display: flex;
+	flex-direction: column;
+	height: 60px;
+	border: 2px solid #000;
+}
+
+.invoice_company {
+	padding-top:10px;
+	text-align: center;
+	border: 2px solid #000;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.invoice_company span {
+	flex: 1;
+}
+
+.invoice_barcode {
+	padding-top:10px;
+	text-align: center;
+	border: 2px solid #000;
+	flex: 3;
+}
+
+
+.invoice_destination {
+	padding-top:10px;
+	text-align: center;
+	border: 2px solid #000;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.invoice_destination span {
+	flex: 1;
+}
+
+
+.invoice_origin {
+	text-align: center;
+	padding-top: 10px;
+	border: 2px solid #000;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.invoice_origin span {
+	flex: 1;
+}
+
+.invoice_date {
+	padding-top: 10px;
+	padding-left: 10px;
+	border: 2px solid #000;
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+}
+
+.invoice_date .date_flex, 
+.invoice_date .foreign_ref_flex, 
+.invoice_date .ref_flex, 
+.invoice_customer .customer_flex,
+.invoice_customer .order_flex, 
+.invoice_weight .weight_flex,
+.invoice_weight .chargeable_flex,
+.invoice_weight .codes_flex,
+.invoice_price .pieces_flex,
+.invoice_price .product_name_flex,
+.invoice_price .price_flex,
+.invoice_accounting .account_flex,
+.invoice_accounting .account_destination,
+.invoice_accounting .customers_services_flex,
+.eg_flex,
+.invoice_customer_details .customer_name_flex,
+.invoice_customer_details .customer_address_flex,
+.invoice_customer_details .customer_phone_flex,
+.invoice_footer .shipper_ref_flex,
+.invoice_footer .consignee_ref_flex {
+	display: flex;
+	flex: 1;
+}
+
+.invoice_date .date_flex span ,
+.invoice_date .foreign_ref_flex span,
+.invoice_date .ref_flex span,
+.invoice_customer .customer_flex span,
+.invoice_customer .order_flex span,
+.invoice_weight .weight_flex span, 
+.invoice_weight .chargeable_flex span,
+.invoice_weight .codes_flex span,
+.invoice_price .pieces_flex span,
+.invoice_price .product_name_flex span,
+.invoice_price .price_flex span,
+.invoice_accounting .account_flex span,
+.invoice_footer .shipper_ref_flex span,
+.invoice_footer .consignee_ref_flex span {
+	flex: 4;
+}
+
+.invoice_accounting .customers_services_flex span,
+.invoice_customer_details .customer_name_flex span,
+.invoice_customer_details .customer_address_flex span,
+.invoice_customer_details .customer_phone_flex span {
+	flex: 2
+}
+
+.eg_flex {
+    justify-content: flex-end;
+    padding-right: 30px;
+    font-size: 27px;
+    font-weight: bold;
+}
+.invoice_accounting .customers_services_flex span:first-child {
+	flex: 1.5;
+}
+.invoice_date .date_flex span:first-child, 
+.invoice_date .foreign_ref_flex span:first-child,
+.invoice_date .ref_flex span:first-child,
+.invoice_customer .customer_flex span:first-child,
+.invoice_customer .order_flex span:first-child,
+.invoice_weight .weight_flex span:first-child,
+.invoice_weight .chargeable_flex span:first-child,
+.invoice_weight .codes_flex span:first-child,
+.invoice_price .pieces_flex span:first-child,
+.invoice_price .product_name_flex span:first-child,
+.invoice_price .price_flex span:first-child,
+.invoice_accounting .account_flex span:first-child,
+.invoice_customer_details .customer_name_flex span:first-child,
+.invoice_customer_details .customer_address_flex span:first-child,
+.invoice_customer_details .customer_phone_flex span:first-child,
+.invoice_footer .shipper_ref_flex span:first-child,
+.invoice_footer .consignee_ref_flex span:first-child {
+	flex: 2;
+}
+
+.invoice_dom, .invoice_onp {
+	align-items: center;
+	border: 2px solid #000;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.invoice_dom span:first-child, .invoice_onp span:first-child {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.invoice_onp {
+	border: 2px solid #000;
+	flex: 1;
+}
+
+.invoice_customer {
+	padding-top: 10px;
+	padding-left: 10px;
+	border: 2px solid #000;
+	flex: 4;
+	display: flex;
+	flex-direction: column;
+}
+
+.invoice_weight {
+	padding-top: 10px;
+	padding-left: 10px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.section_four h4 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background-color: #000;
+	color: #ccc;
+	padding:10px;
+}
+
+.invoice_price {
+	padding-top: 10px;
+	padding-left: 10px;
+	flex: 1;
+}
+
+.invoice_accounting, .invoice_customer_details {
+	height: 175px;
+	padding-top: 10px;
+	padding-left: 50px;
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+}
+
+.invoice_footer {
+	padding-top: 10px;
+	padding-left: 50px;
+	display: flex;
+	flex-direction: column;
+}

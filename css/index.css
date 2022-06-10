@@ -1,0 +1,35 @@
+html {
+  background-color: #5D92BA;
+  font-family: "Tenor Sans", sans-serif;
+}
+
+.container {
+	display: grid;
+	margin-top: 15rem;
+}
+
+button {
+	width: 300px;
+	margin: 10px auto;
+	padding: 20px;
+	background: #4478a0;
+	border:none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+button:hover {
+	background-color: #1a4261;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
