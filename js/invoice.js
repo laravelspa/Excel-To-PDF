@@ -1,5 +1,5 @@
 var data = JSON.parse(sessionStorage.getItem('excel'));
-
+console.log(data);
 if (data.length != 1) {
 	for (var i = 1; i < data.length; i++) {
 		document.body.innerHTML += `
