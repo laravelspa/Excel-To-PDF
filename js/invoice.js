@@ -101,7 +101,7 @@ if (data.length != 1) {
 					</div>
 					<div class="customers_services_flex">
 						<span class="fb">Customers Services:</span>
-						<span class="fb-20 up">${'0'+data[i][11]}</span>
+						<span class="fb-20 up">${'0' + data[i][11]}</span>
 					</div>
 					<div class="eg_flex">
 						<span>EG</span>
@@ -140,13 +140,13 @@ if (data.length != 1) {
 					</div>
 				</div>
 			</div>
-		</div>`;	
+		</div>`;
 
-	JsBarcode(`#barcode_value_${i}`,data[i][13], {
-		width: 1,
-		height: 40
-	})
-	}	
+		JsBarcode(`#barcode_value_${i}`, data[i][13], {
+			width: 1,
+			height: 40
+		})
+	}
 } else {
 	document.getElementById('invoice_print').style.display = 'none';
 	document.body.innerHTML = `<div style="width:50%;text-align:center;color:#ccc;background:#000;padding:20px;margin: 20px auto">
@@ -154,21 +154,21 @@ if (data.length != 1) {
 	</div>`
 }
 
-document.getElementById('invoice_print').addEventListener('click', function() {
+document.getElementById('invoice_print').addEventListener('click', function () {
 	var pe = document.getElementsByClassName('container')
 
 	for (var i = 0; i < pe.length; i++) {
-		domtoimage.toJpeg(pe[i], { quality: 0.95, width:"800" })
-		.then(function (dataUrl) {
-		    saveAs(dataUrl,'image.jpg');
-		});
+		domtoimage.toJpeg(pe[i], { quality: 0.95, width: "800" })
+			.then(function (dataUrl) {
+				saveAs(dataUrl, 'image.jpg');
+			});
 		function saveAs(url, filename) {
 			var link = document.createElement('a');
 			if (typeof link.download === 'string') {
 				link.href = url;
 				link.download = filename;
 				document.body.appendChild(link);
-				link.click();	
+				link.click();
 				document.body.removeChild(link);
 			}
 		}
@@ -176,16 +176,16 @@ document.getElementById('invoice_print').addEventListener('click', function() {
 })
 
 
-document.getElementById('invoice_pdf').addEventListener('click', function() {
+document.getElementById('invoice_pdf').addEventListener('click', function () {
 	var pe = document.getElementsByClassName('container')
 
 	for (var i = 0; i < pe.length; i++) {
-		domtoimage.toJpeg(pe[i], { quality: 0.95, width:"800" })
-		.then(function (dataUrl) {
-		    var doc = new jsPDF();
-		    doc.addImage(dataUrl, 'JPEG',0,0);
-			doc.save('a4.pdf');
-		});
+		domtoimage.toJpeg(pe[i], { quality: 0.95, width: "800" })
+			.then(function (dataUrl) {
+				var doc = new jsPDF();
+				doc.addImage(dataUrl, 'JPEG', 0, 0);
+				doc.save('a4.pdf');
+			});
 	}
 })
 
